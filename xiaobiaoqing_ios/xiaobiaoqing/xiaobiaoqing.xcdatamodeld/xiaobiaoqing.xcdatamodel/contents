@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="ExpressionCollectEntity" representedClassName="ExpressionCollectEntity" syncable="YES">
+        <attribute name="image_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ExpressionDetailEntity" representedClassName="ExpressionDetailEntity" syncable="YES">
+        <attribute name="expression_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ExpressionEntity" representedClassName="ExpressionEntity" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cover_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expression_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="weixin" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="JokeCollectEntity" representedClassName="JokeCollectEntity" syncable="YES">
+        <attribute name="joke_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="joke_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="JokeEntity" representedClassName="JokeEntity" syncable="YES">
+        <attribute name="joke_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="joke_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PictureCollectEntity" representedClassName="PictureCollectEntity" syncable="YES">
+        <attribute name="d_gif_image_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="d_gif_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PictureEntity" representedClassName="PictureEntity" syncable="YES">
+        <attribute name="d_gif_image_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="d_gif_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_since1970" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ExpressionCollectEntity" positionX="-54" positionY="36" width="128" height="105"/>
+        <element name="ExpressionDetailEntity" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="ExpressionEntity" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="JokeCollectEntity" positionX="-45" positionY="45" width="128" height="90"/>
+        <element name="JokeEntity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="PictureCollectEntity" positionX="-36" positionY="54" width="128" height="105"/>
+        <element name="PictureEntity" positionX="-45" positionY="36" width="128" height="105"/>
+    </elements>
+</model>

@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "00321526-8632-4998-bdc4-19c334131f9f",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "00321526-8632-4998-bdc4-19c334131f9f" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "00321526-8632-4998-bdc4-19c334131f9f" : 0,
+    "344CD8B9CF76579D59D2ED4F587986026D5EA4A1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "77E8D6C2-82EB-4E45-8873-9B18F9ACA64E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "00321526-8632-4998-bdc4-19c334131f9f" : "xiaobiaoqing_ios\/",
+    "344CD8B9CF76579D59D2ED4F587986026D5EA4A1" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "funnyji",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "funnyji.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svnchina.com\/svn\/xiaobiaoqing_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00321526-8632-4998-bdc4-19c334131f9f"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/1967036155\/xiaobiaoqing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "344CD8B9CF76579D59D2ED4F587986026D5EA4A1"
+    }
+  ]
+}
