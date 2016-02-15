@@ -37,25 +37,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:239/255.0 green:244/255.0 blue:245/255.0 alpha:1];
+    self.title = _model.name;
     
-    UIView *navigationView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
-    navigationView.backgroundColor = [UIColor colorWithRed:138/255.0 green:192/255.0 blue:18/255.0 alpha:1];
-    [self.view addSubview:navigationView];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:138/255.0 green:192/255.0 blue:18/255.0 alpha:1];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+    self.navigationController.navigationBar.translucent = NO;
     
-    UIButton *backButton = [[UIButton alloc]initWithFrame:CGRectMake(5, 30, 40, 20)];
-    [backButton setImage:[UIImage imageNamed:@"ico_back"] forState:UIControlStateNormal];
-    [backButton addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-    [navigationView addSubview:backButton];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStyleDone target:self action:@selector(backClick)];
+    [backButton setImage:[UIImage imageNamed:@"ico_back"]];
+    [backButton setTintColor:[UIColor whiteColor]];
+    self.navigationItem.leftBarButtonItem = backButton;
     
-    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake((navigationView.frame.size.width-200)/2, 30, 200, 20)];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.text = _model.name;
-    titleLabel.textColor = [UIColor whiteColor];
-    [navigationView addSubview:titleLabel];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self.userCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64)collectionViewLayout:layout];
+    self.userCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64)collectionViewLayout:layout];
     self.userCollectionView.delegate = self;
     self.userCollectionView.dataSource = self;
     [self.view addSubview:self.userCollectionView];

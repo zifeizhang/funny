@@ -115,7 +115,7 @@
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(loginButn)];
     [leftBtn setImage:[UIImage imageNamed:@"login"]];
     [leftBtn setTintColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]];
-//    self.navigationItem.leftBarButtonItem = leftBtn;
+    self.navigationItem.leftBarButtonItem = leftBtn;
     
     _total = 0;
     progress = 0;

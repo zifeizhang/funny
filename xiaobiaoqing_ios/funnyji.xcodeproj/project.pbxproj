@@ -32,7 +32,6 @@
 		2E17E80F1BD5E98900DE2D14 /* ExpressionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E80E1BD5E98900DE2D14 /* ExpressionEntity.m */; };
 		2E17E81B1BD5F54F00DE2D14 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E81A1BD5F54F00DE2D14 /* CollectViewController.m */; };
 		2E17E81E1BD5F5BA00DE2D14 /* ExpressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E81D1BD5F5BA00DE2D14 /* ExpressionViewController.m */; };
-		2E17E8211BD5F61900DE2D14 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E8201BD5F61900DE2D14 /* PictureViewController.m */; };
 		2E17E8241BD5F64300DE2D14 /* JokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E8231BD5F64300DE2D14 /* JokeViewController.m */; };
 		2E17E8281BD5F6B500DE2D14 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E8271BD5F6B500DE2D14 /* TabBarViewController.m */; };
 		2E17E82B1BD5F82000DE2D14 /* ExpressionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E82A1BD5F82000DE2D14 /* ExpressionModel.m */; };
@@ -132,6 +131,7 @@
 		2EDDCD701BFD741100C7235A /* no@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EDDCD6D1BFD741100C7235A /* no@3x.jpg */; };
 		2EDEE2A71BFC33FD0054EA5B /* jokeCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEE2A51BFC33FD0054EA5B /* jokeCollectCell.m */; };
 		2EDEE2A81BFC33FD0054EA5B /* jokeCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEE2A61BFC33FD0054EA5B /* jokeCollectCell.xib */; };
+		2EE070C81C55FCA40026B72E /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17E8201BD5F61900DE2D14 /* PictureViewController.m */; };
 		2EE168591C0EBE6C006B758C /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE168581C0EBE6C006B758C /* UserViewController.m */; };
 		2EE1DA2B1BFABE9000B26294 /* ico_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1D9E21BFABE9000B26294 /* ico_back.png */; };
 		2EE1DA2C1BFABE9000B26294 /* ico_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1D9E31BFABE9000B26294 /* ico_back@2x.png */; };
@@ -1385,6 +1385,7 @@
 				2EE1DA741BFAD23000B26294 /* PictureHeaderView.m in Sources */,
 				2EE4C0061C1947DA001BF306 /* SVIndefiniteAnimatedView.m in Sources */,
 				2ECC2F421BE9B8EB008B2103 /* PictureCell.m in Sources */,
+				2EE070C81C55FCA40026B72E /* PictureViewController.m in Sources */,
 				2E5BBDD11C103E3900DD6A4D /* RegistViewController.m in Sources */,
 				2ECC2F391BE9A4F9008B2103 /* JokeCollectEntity.m in Sources */,
 				2ED20D581BE06A8300BBF681 /* SDWebImagePrefetcher.m in Sources */,
@@ -1427,7 +1428,6 @@
 				2E428ACB1C16786400482369 /* PasswordViewController.m in Sources */,
 				2E17E81E1BD5F5BA00DE2D14 /* ExpressionViewController.m in Sources */,
 				2EC9E2711BCC93C9006694FB /* xiaobiaoqing.xcdatamodeld in Sources */,
-				2E17E8211BD5F61900DE2D14 /* PictureViewController.m in Sources */,
 				2ED20D5F1BE06A8300BBF681 /* UIView+WebCacheOperation.m in Sources */,
 				2EE4AB091C1EBB7300535135 /* AFURLConnectionOperation.m in Sources */,
 				2ED1E6E31C40F9FE00945742 /* ImageViewController.m in Sources */,

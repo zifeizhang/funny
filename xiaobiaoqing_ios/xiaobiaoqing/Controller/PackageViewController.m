@@ -170,9 +170,10 @@
     ExpressionModel *model = _dataSoureArr[indexPath.row];
     
     PackageDetailViewController *packageDetailVC = [[PackageDetailViewController alloc]init];
+    UINavigationController *naVC = [[UINavigationController alloc]initWithRootViewController:packageDetailVC];
     
     packageDetailVC.model = model;
-    [self presentViewController:packageDetailVC animated:YES completion:nil];
+    [self presentViewController:naVC animated:YES completion:nil];
 }
 
 
