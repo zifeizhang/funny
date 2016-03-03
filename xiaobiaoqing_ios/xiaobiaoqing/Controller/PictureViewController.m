@@ -109,7 +109,7 @@
     [self initWithShareSDKView];
     
     //初始化刷新（刷新数据库）
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(refreshButn)];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(refreshBtn)];
     [rightBtn setImage:[UIImage imageNamed:@"ico_repeat"]];
     [rightBtn setTintColor:[UIColor whiteColor]];
     self.navigationItem.rightBarButtonItem = rightBtn;
@@ -207,7 +207,7 @@
     page = 0;
     [self getDataUrl:[NSString stringWithFormat:url_str,(long)page]];
 }
--(void)refreshButn{
+-(void)refreshBtn{
     
     //删除所有数据
     [self deleteData];

@@ -21,6 +21,9 @@
 #import "UserViewController.h"
 #import "LoginViewController.h"
 #import "ExpressionDetailEntity.h"
+
+#import "XMNShareMenu.h"
+
 @interface ExpressionViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 {
     UITableView *userTableView;
@@ -43,6 +46,8 @@
     
     NSMutableDictionary *queueDic ;
     NSOperationQueue *operaQueue;
+    
+    
     
 }
 
@@ -102,8 +107,10 @@
     [self addFooter];
     
     //初始化刷新（刷新数据库）
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(refreshButn)];
-    [rightBtn setImage:[UIImage imageNamed:@"ico_repeat"]];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(refreshBtn)];
+//    [rightBtn setImage:[UIImage imageNamed:@"ico_repeat"]];
+    [rightBtn setTitle:@"推荐"];
+    
     [rightBtn setTintColor:[UIColor whiteColor]];
     self.navigationItem.rightBarButtonItem = rightBtn;
     
@@ -112,10 +119,10 @@
     
     
     //初始化登录按钮
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(loginButn)];
-    [leftBtn setImage:[UIImage imageNamed:@"login"]];
-    [leftBtn setTintColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]];
-    self.navigationItem.leftBarButtonItem = leftBtn;
+//    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(loginButn)];
+//    [leftBtn setImage:[UIImage imageNamed:@"login"]];
+//    [leftBtn setTintColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]];
+//    self.navigationItem.leftBarButtonItem = leftBtn;
     
     _total = 0;
     progress = 0;
@@ -172,12 +179,17 @@
     [inc startAnimating];
 }
 
--(void)refreshButn{
+-(void)refreshBtn{
+    
+    ZFShareViewController *VC = [[ZFShareViewController alloc]init];
+    UINavigationController *naV = [[UINavigationController alloc]initWithRootViewController:VC];
+    [self presentViewController:naV animated:YES completion:nil];
+
     
     //删除所有数据
-    [self deleteData];
-    page = 0;
-    [self getDataUrl:[NSString stringWithFormat:url_str,(long)page]];
+//    [self deleteData];
+//    page = 0;
+//    [self getDataUrl:[NSString stringWithFormat:url_str,(long)page]];
 }
 - (void)addFooter{
     __unsafe_unretained ExpressionViewController *vc = self;
@@ -389,6 +401,7 @@
         model.weixin = [info valueForKey:@"weixin"];
         model.isDownload = [[info valueForKey:@"isDownload"] intValue];
         [_dataSoureArr addObject:model];
+        ZFLog(@"id === %lld",model.expression_id);
         
     }
     [userTableView reloadData];
@@ -452,6 +465,41 @@
     }
    
     return model;
+}
+
+//更新指定的一条数据
+-(void)editData:(ExpressionModel*)model{
+    
+    AppDelegate *app = [[UIApplication sharedApplication]delegate];
+    NSManagedObjectContext *context = [app managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ExpressionEntity" inManagedObjectContext:context];
+    [request setEntity:entity];
+    [request setReturnsObjectsAsFaults:NO];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(expression_id = %@)",[NSNumber numberWithLongLong:model.expression_id]];
+    [request setPredicate:predicate];
+    NSArray *dataArray = [context executeFetchRequest:request error:nil];
+    
+    if ([dataArray count] > 0) {
+        
+        ExpressionEntity *expressionEntity = [dataArray objectAtIndex:0];
+        [expressionEntity setValue:[NSNumber numberWithLongLong:model.expression_id]  forKey:@"expression_id"];
+        [expressionEntity setValue:model.name forKey:@"name"];
+        [expressionEntity setValue:[NSNumber numberWithLongLong:model.time_since1970] forKey:@"time_since1970"];
+        [expressionEntity setValue:model.cover_image_url forKey:@"cover_image_url"];
+        [expressionEntity setValue:model.author forKey:@"author"];
+        [expressionEntity setValue:model.weixin forKey:@"weixin"];
+        [expressionEntity setValue:@(model.isDownload) forKey:@"isDownload"];
+        [expressionEntity setValue:@(model.isCollect) forKey:@"isCollect"];
+        
+        BOOL result = [context save:nil];
+        if (result) {
+            NSLog(@"编辑成功 %@", expressionEntity);
+        }else{
+            NSLog(@"编辑失败");
+        }
+    }
+    
 }
 
 //删除数据
@@ -524,9 +572,10 @@
                     cell.progressView.hidden = YES;
                     [cell.btn setTitle:@"已暂停" forState:UIControlStateNormal];
                     _total = 0;
-                    cell.selfModel.isDownload = 2;
                     
-                    [self insertCoreData:cell.selfModel];
+                    cell.selfModel.isDownload = 2;
+                    [self editData:cell.selfModel];
+                    
                     
                     NSIndexPath *indexPath = [userTableView indexPathForCell:cell];
                     [userTableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -540,10 +589,11 @@
                 return;
             }
         }
-        cell.selfModel.isDownload = 3;
-        [self insertCoreData:cell.selfModel];
-
         
+        cell.selfModel.isDownload = 3;
+//        [self editData:cell.selfModel];
+
+
         __block NSString *connectionKind = nil;
         [[AFNetworkReachabilityManager sharedManager]startMonitoring];
         [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -569,13 +619,33 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 if (status == AFNetworkReachabilityStatusNotReachable) {
-                     UIAlertView *view =[[UIAlertView alloc]initWithTitle:@"" message:connectionKind delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-                    [view show];
+                    
+
+                    [[AFNetworkReachabilityManager sharedManager]stopMonitoring];
+                    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+                    [SVProgressHUD showInfoWithStatus:connectionKind];
+                    
+//                    if (cell.selfModel.isDownload == 2) {
+//                        [self editData:cell.selfModel];
+//                    }else{
+                    
+                        cell.selfModel.isDownload = 0;
+                        [self editData:cell.selfModel];
+//                    }
+                    
+                    
+                    
+                }else if(status == AFNetworkReachabilityStatusReachableViaWiFi){
+                    
+                    [self picturePackageDownload];
+                    [[AFNetworkReachabilityManager sharedManager]stopMonitoring];
+                    
                 }else{
+                
                     UIAlertView *view =[[UIAlertView alloc]initWithTitle:@"" message:connectionKind delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
                     
                     [view show];
-                    
                 }
                 
             });
@@ -590,6 +660,7 @@
 }
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
 
+    [[AFNetworkReachabilityManager sharedManager]stopMonitoring];
     if (buttonIndex == 0) {
         
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
@@ -601,13 +672,30 @@
         }
         globalCell.progressView.hidden = NO;
         globalCell.btn.userInteractionEnabled = NO;
-        
-        
         [self getImageDataUrl:[NSString stringWithFormat:expression_url,globalModel.expression_id] tag:(int)globalModel.expression_id cell:globalCell];
         
         
+    }else{
+    
+        globalCell.selfModel.isDownload = 0;
+        [self editData:globalCell.selfModel];
+
     }
 
+}
+//wifi --- 下载
+-(void)picturePackageDownload{
+
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    _imagePath1 = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%lld",globalModel.expression_id]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:_imagePath1])//判断createPath路径文件夹是否已存在，此处createPath为需要新建的文件夹的绝对路径
+    {
+        [[NSFileManager defaultManager] createDirectoryAtPath:_imagePath1 withIntermediateDirectories:YES attributes:nil error:nil];//创建文件夹
+        
+    }
+    globalCell.progressView.hidden = NO;
+    globalCell.btn.userInteractionEnabled = NO;
+    [self getImageDataUrl:[NSString stringWithFormat:expression_url,globalModel.expression_id] tag:(int)globalModel.expression_id cell:globalCell];
 }
 
 -(void)getImageDataUrl:(NSString*)Url tag:(NSInteger)tag cell:(ExpressionViewCell*)cell{
@@ -701,6 +789,7 @@
             
             if (_total == _count) {
                 
+                [[AFNetworkReachabilityManager sharedManager]stopMonitoring];
                 _total = 0;
                 progress = 0;
                 [cell.progressView setProgress:progress animated:YES];
@@ -713,7 +802,7 @@
                 [cell.btn setTitle:@"已下载" forState:UIControlStateNormal];
                 
                 cell.selfModel.isDownload = 1;
-                [self insertCoreData:cell.selfModel];
+                [self editData:cell.selfModel];
                 
                 NSIndexPath *indexPath = [userTableView indexPathForCell:cell];
                 [userTableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -774,7 +863,6 @@
         return NO;
     }
 }
-
 
 
 -(void)dealloc{

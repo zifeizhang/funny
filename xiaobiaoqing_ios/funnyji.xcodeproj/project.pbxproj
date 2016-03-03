@@ -220,6 +220,28 @@
 		2EE4C0071C1947DA001BF306 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EE4C0011C1947DA001BF306 /* SVProgressHUD.bundle */; };
 		2EE4C0081C1947DA001BF306 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4C0031C1947DA001BF306 /* SVProgressHUD.m */; };
 		2EE4C0091C1947DA001BF306 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4C0051C1947DA001BF306 /* SVRadialGradientLayer.m */; };
+		2EECE4CF1C87E01F00C9A3A3 /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4C41C87E01F00C9A3A3 /* AppCell.m */; };
+		2EECE4D01C87E01F00C9A3A3 /* AppCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4C51C87E01F00C9A3A3 /* AppCell.xib */; };
+		2EECE4D11C87E01F00C9A3A3 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4C71C87E01F00C9A3A3 /* AppModel.m */; };
+		2EECE4D21C87E01F00C9A3A3 /* XMNShareScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4CA1C87E01F00C9A3A3 /* XMNShareScrollView.m */; };
+		2EECE4D31C87E01F00C9A3A3 /* XMNShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4CC1C87E01F00C9A3A3 /* XMNShareView.m */; };
+		2EECE4D41C87E01F00C9A3A3 /* ZFShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4CE1C87E01F00C9A3A3 /* ZFShareViewController.m */; };
+		2EECE4F11C87E02E00C9A3A3 /* VerticalUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4D91C87E02E00C9A3A3 /* VerticalUIButton.m */; };
+		2EECE4F21C87E02E00C9A3A3 /* hourglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4DB1C87E02E00C9A3A3 /* hourglass.png */; };
+		2EECE4F31C87E02E00C9A3A3 /* hourglass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4DC1C87E02E00C9A3A3 /* hourglass@2x.png */; };
+		2EECE4F41C87E02E00C9A3A3 /* hourglass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4DD1C87E02E00C9A3A3 /* hourglass@3x.png */; };
+		2EECE4F51C87E02E00C9A3A3 /* icon_share_moment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4DE1C87E02E00C9A3A3 /* icon_share_moment@2x.png */; };
+		2EECE4F61C87E02E00C9A3A3 /* icon_share_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4DF1C87E02E00C9A3A3 /* icon_share_qq@2x.png */; };
+		2EECE4F71C87E02E00C9A3A3 /* icon_share_qzone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4E01C87E02E00C9A3A3 /* icon_share_qzone@2x.png */; };
+		2EECE4F81C87E02E00C9A3A3 /* icon_share_webo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4E11C87E02E00C9A3A3 /* icon_share_webo@2x.png */; };
+		2EECE4F91C87E02E00C9A3A3 /* icon_share_wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4E21C87E02E00C9A3A3 /* icon_share_wechat@2x.png */; };
+		2EECE4FA1C87E02E00C9A3A3 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EECE4E31C87E02E00C9A3A3 /* logo.jpg */; };
+		2EECE4FB1C87E02E00C9A3A3 /* XMShareQQUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4E61C87E02E00C9A3A3 /* XMShareQQUtil.m */; };
+		2EECE4FC1C87E02E00C9A3A3 /* XMShareUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4E81C87E02E00C9A3A3 /* XMShareUtil.m */; };
+		2EECE4FD1C87E02E00C9A3A3 /* XMShareWechatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4EA1C87E02E00C9A3A3 /* XMShareWechatUtil.m */; };
+		2EECE4FE1C87E02E00C9A3A3 /* XMShareWeiboUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4EC1C87E02E00C9A3A3 /* XMShareWeiboUtil.m */; };
+		2EECE4FF1C87E02E00C9A3A3 /* XMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4EE1C87E02E00C9A3A3 /* XMShareView.m */; };
+		2EECE5001C87E02E00C9A3A3 /* ZFshareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4F01C87E02E00C9A3A3 /* ZFshareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -532,6 +554,42 @@
 		2EE4C0031C1947DA001BF306 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		2EE4C0041C1947DA001BF306 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		2EE4C0051C1947DA001BF306 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		2EECE4C31C87E01F00C9A3A3 /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
+		2EECE4C41C87E01F00C9A3A3 /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
+		2EECE4C51C87E01F00C9A3A3 /* AppCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppCell.xib; sourceTree = "<group>"; };
+		2EECE4C61C87E01F00C9A3A3 /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		2EECE4C71C87E01F00C9A3A3 /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		2EECE4C81C87E01F00C9A3A3 /* XMNShareMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareMenu.h; sourceTree = "<group>"; };
+		2EECE4C91C87E01F00C9A3A3 /* XMNShareScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareScrollView.h; sourceTree = "<group>"; };
+		2EECE4CA1C87E01F00C9A3A3 /* XMNShareScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNShareScrollView.m; sourceTree = "<group>"; };
+		2EECE4CB1C87E01F00C9A3A3 /* XMNShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareView.h; sourceTree = "<group>"; };
+		2EECE4CC1C87E01F00C9A3A3 /* XMNShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNShareView.m; sourceTree = "<group>"; };
+		2EECE4CD1C87E01F00C9A3A3 /* ZFShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFShareViewController.h; sourceTree = "<group>"; };
+		2EECE4CE1C87E01F00C9A3A3 /* ZFShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFShareViewController.m; sourceTree = "<group>"; };
+		2EECE4D61C87E02E00C9A3A3 /* CommonMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMarco.h; sourceTree = "<group>"; };
+		2EECE4D81C87E02E00C9A3A3 /* VerticalUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalUIButton.h; sourceTree = "<group>"; };
+		2EECE4D91C87E02E00C9A3A3 /* VerticalUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalUIButton.m; sourceTree = "<group>"; };
+		2EECE4DB1C87E02E00C9A3A3 /* hourglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourglass.png; sourceTree = "<group>"; };
+		2EECE4DC1C87E02E00C9A3A3 /* hourglass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourglass@2x.png"; sourceTree = "<group>"; };
+		2EECE4DD1C87E02E00C9A3A3 /* hourglass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourglass@3x.png"; sourceTree = "<group>"; };
+		2EECE4DE1C87E02E00C9A3A3 /* icon_share_moment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_moment@2x.png"; sourceTree = "<group>"; };
+		2EECE4DF1C87E02E00C9A3A3 /* icon_share_qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_qq@2x.png"; sourceTree = "<group>"; };
+		2EECE4E01C87E02E00C9A3A3 /* icon_share_qzone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_qzone@2x.png"; sourceTree = "<group>"; };
+		2EECE4E11C87E02E00C9A3A3 /* icon_share_webo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_webo@2x.png"; sourceTree = "<group>"; };
+		2EECE4E21C87E02E00C9A3A3 /* icon_share_wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_wechat@2x.png"; sourceTree = "<group>"; };
+		2EECE4E31C87E02E00C9A3A3 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		2EECE4E51C87E02E00C9A3A3 /* XMShareQQUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMShareQQUtil.h; sourceTree = "<group>"; };
+		2EECE4E61C87E02E00C9A3A3 /* XMShareQQUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareQQUtil.m; sourceTree = "<group>"; };
+		2EECE4E71C87E02E00C9A3A3 /* XMShareUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMShareUtil.h; sourceTree = "<group>"; };
+		2EECE4E81C87E02E00C9A3A3 /* XMShareUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareUtil.m; sourceTree = "<group>"; };
+		2EECE4E91C87E02E00C9A3A3 /* XMShareWechatUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMShareWechatUtil.h; sourceTree = "<group>"; };
+		2EECE4EA1C87E02E00C9A3A3 /* XMShareWechatUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareWechatUtil.m; sourceTree = "<group>"; };
+		2EECE4EB1C87E02E00C9A3A3 /* XMShareWeiboUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMShareWeiboUtil.h; sourceTree = "<group>"; };
+		2EECE4EC1C87E02E00C9A3A3 /* XMShareWeiboUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareWeiboUtil.m; sourceTree = "<group>"; };
+		2EECE4ED1C87E02E00C9A3A3 /* XMShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMShareView.h; sourceTree = "<group>"; };
+		2EECE4EE1C87E02E00C9A3A3 /* XMShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareView.m; sourceTree = "<group>"; };
+		2EECE4EF1C87E02E00C9A3A3 /* ZFshareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFshareView.h; sourceTree = "<group>"; };
+		2EECE4F01C87E02E00C9A3A3 /* ZFshareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFshareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -779,6 +837,8 @@
 		2EC9E2571BCC93C9006694FB = {
 			isa = PBXGroup;
 			children = (
+				2EECE4D51C87E02E00C9A3A3 /* XMShareView */,
+				2EECE4C21C87E01F00C9A3A3 /* XMNShareMenu */,
 				2ED19F3D1C28EC280027F616 /* StoreKit.framework */,
 				2ED19F3B1C28EC1A0027F616 /* Security.framework */,
 				2ED19F391C28EBCE0027F616 /* CoreTelephony.framework */,
@@ -1194,6 +1254,80 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		2EECE4C21C87E01F00C9A3A3 /* XMNShareMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2EECE4C31C87E01F00C9A3A3 /* AppCell.h */,
+				2EECE4C41C87E01F00C9A3A3 /* AppCell.m */,
+				2EECE4C51C87E01F00C9A3A3 /* AppCell.xib */,
+				2EECE4C61C87E01F00C9A3A3 /* AppModel.h */,
+				2EECE4C71C87E01F00C9A3A3 /* AppModel.m */,
+				2EECE4C81C87E01F00C9A3A3 /* XMNShareMenu.h */,
+				2EECE4C91C87E01F00C9A3A3 /* XMNShareScrollView.h */,
+				2EECE4CA1C87E01F00C9A3A3 /* XMNShareScrollView.m */,
+				2EECE4CB1C87E01F00C9A3A3 /* XMNShareView.h */,
+				2EECE4CC1C87E01F00C9A3A3 /* XMNShareView.m */,
+				2EECE4CD1C87E01F00C9A3A3 /* ZFShareViewController.h */,
+				2EECE4CE1C87E01F00C9A3A3 /* ZFShareViewController.m */,
+			);
+			path = XMNShareMenu;
+			sourceTree = "<group>";
+		};
+		2EECE4D51C87E02E00C9A3A3 /* XMShareView */ = {
+			isa = PBXGroup;
+			children = (
+				2EECE4D61C87E02E00C9A3A3 /* CommonMarco.h */,
+				2EECE4D71C87E02E00C9A3A3 /* ExtView */,
+				2EECE4DA1C87E02E00C9A3A3 /* Resource */,
+				2EECE4E41C87E02E00C9A3A3 /* ShareUtil */,
+				2EECE4ED1C87E02E00C9A3A3 /* XMShareView.h */,
+				2EECE4EE1C87E02E00C9A3A3 /* XMShareView.m */,
+				2EECE4EF1C87E02E00C9A3A3 /* ZFshareView.h */,
+				2EECE4F01C87E02E00C9A3A3 /* ZFshareView.m */,
+			);
+			path = XMShareView;
+			sourceTree = "<group>";
+		};
+		2EECE4D71C87E02E00C9A3A3 /* ExtView */ = {
+			isa = PBXGroup;
+			children = (
+				2EECE4D81C87E02E00C9A3A3 /* VerticalUIButton.h */,
+				2EECE4D91C87E02E00C9A3A3 /* VerticalUIButton.m */,
+			);
+			path = ExtView;
+			sourceTree = "<group>";
+		};
+		2EECE4DA1C87E02E00C9A3A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2EECE4DB1C87E02E00C9A3A3 /* hourglass.png */,
+				2EECE4DC1C87E02E00C9A3A3 /* hourglass@2x.png */,
+				2EECE4DD1C87E02E00C9A3A3 /* hourglass@3x.png */,
+				2EECE4DE1C87E02E00C9A3A3 /* icon_share_moment@2x.png */,
+				2EECE4DF1C87E02E00C9A3A3 /* icon_share_qq@2x.png */,
+				2EECE4E01C87E02E00C9A3A3 /* icon_share_qzone@2x.png */,
+				2EECE4E11C87E02E00C9A3A3 /* icon_share_webo@2x.png */,
+				2EECE4E21C87E02E00C9A3A3 /* icon_share_wechat@2x.png */,
+				2EECE4E31C87E02E00C9A3A3 /* logo.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2EECE4E41C87E02E00C9A3A3 /* ShareUtil */ = {
+			isa = PBXGroup;
+			children = (
+				2EECE4E51C87E02E00C9A3A3 /* XMShareQQUtil.h */,
+				2EECE4E61C87E02E00C9A3A3 /* XMShareQQUtil.m */,
+				2EECE4E71C87E02E00C9A3A3 /* XMShareUtil.h */,
+				2EECE4E81C87E02E00C9A3A3 /* XMShareUtil.m */,
+				2EECE4E91C87E02E00C9A3A3 /* XMShareWechatUtil.h */,
+				2EECE4EA1C87E02E00C9A3A3 /* XMShareWechatUtil.m */,
+				2EECE4EB1C87E02E00C9A3A3 /* XMShareWeiboUtil.h */,
+				2EECE4EC1C87E02E00C9A3A3 /* XMShareWeiboUtil.m */,
+			);
+			path = ShareUtil;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1254,6 +1388,7 @@
 				2EE1DA671BFABE9000B26294 /* tab_duanzi@3x.png in Resources */,
 				2EE1DA6D1BFABE9000B26294 /* tab_shoucang@3x.png in Resources */,
 				2EE1DA5D1BFABE9000B26294 /* tab_biaoqing_on@2x.png in Resources */,
+				2EECE4F21C87E02E00C9A3A3 /* hourglass.png in Resources */,
 				2E15471F1C059F980023490D /* LaunchImage-800-667h@2x.png in Resources */,
 				2ECC2F431BE9B8EB008B2103 /* PictureCell.xib in Resources */,
 				2EE1DA4C1BFABE9000B26294 /* ico_tengxun.png in Resources */,
@@ -1306,6 +1441,7 @@
 				2E94DCAC1C27A49200D5580F /* lock.png in Resources */,
 				2EE1DA481BFABE9000B26294 /* ico_renren@3x.png in Resources */,
 				2EC8C64C1BE3682C0045C2AF /* JokeCell.xib in Resources */,
+				2EECE4F61C87E02E00C9A3A3 /* icon_share_qq@2x.png in Resources */,
 				2EE1DA2E1BFABE9000B26294 /* ico_glass.png in Resources */,
 				2ECB79361BE1EB5900B80B7F /* WeiboSDK.bundle in Resources */,
 				2EE1DA3F1BFABE9000B26294 /* ico_repeat@3x.png in Resources */,
@@ -1332,14 +1468,19 @@
 				2E1547161C059F4C0023490D /* Images.xcassets in Resources */,
 				2EE1DA4F1BFABE9000B26294 /* ico_weixin.png in Resources */,
 				2EE332F71C47833400011853 /* ExpressionDetailCell.xib in Resources */,
+				2EECE4F41C87E02E00C9A3A3 /* hourglass@3x.png in Resources */,
 				2EE24EEA1C0D80FF00B02477 /* login@3x.png in Resources */,
 				2E0DB67E1C0C553300757A80 /* ico_qq@2x.png in Resources */,
 				2EE1DA591BFABE9000B26294 /* tab_biaoqing.png in Resources */,
+				2EECE4F91C87E02E00C9A3A3 /* icon_share_wechat@2x.png in Resources */,
 				2E0DB66E1C0C430400757A80 /* ico_sina.png in Resources */,
+				2EECE4F51C87E02E00C9A3A3 /* icon_share_moment@2x.png in Resources */,
 				2EE1DA2F1BFABE9000B26294 /* ico_glass@2x.png in Resources */,
 				2E0DB6701C0C430400757A80 /* ico_sina@3x.png in Resources */,
 				2EE1DA4A1BFABE9000B26294 /* ico_sina@2x.png in Resources */,
 				2EE1DA6E1BFABE9000B26294 /* tab_shoucang_on.png in Resources */,
+				2EECE4FA1C87E02E00C9A3A3 /* logo.jpg in Resources */,
+				2EECE4D01C87E01F00C9A3A3 /* AppCell.xib in Resources */,
 				2E61879F1BF2D72B0091E2D4 /* ExpressionHeaderView.xib in Resources */,
 				2EE1DA3E1BFABE9000B26294 /* ico_repeat@2x.png in Resources */,
 				2E94DCA81C279E9300D5580F /* myhead.png in Resources */,
@@ -1362,10 +1503,13 @@
 				2EE1DA431BFABE9000B26294 /* ico_up.png in Resources */,
 				2EE1DA341BFABE9000B26294 /* ico_love.png in Resources */,
 				2EE1DA391BFABE9000B26294 /* ico_love_on@3x.png in Resources */,
+				2EECE4F81C87E02E00C9A3A3 /* icon_share_webo@2x.png in Resources */,
 				2EE275FC1BFECB2700BF6B8D /* hourglass@3x.png in Resources */,
 				2EC9E2731BCC93C9006694FB /* Assets.xcassets in Resources */,
 				2EE1DA701BFABE9000B26294 /* tab_shoucang_on@3x.png in Resources */,
+				2EECE4F71C87E02E00C9A3A3 /* icon_share_qzone@2x.png in Resources */,
 				2EE1DA361BFABE9000B26294 /* ico_love@3x.png in Resources */,
+				2EECE4F31C87E02E00C9A3A3 /* hourglass@2x.png in Resources */,
 				2ECED6BF1BF032BE00E4A0FC /* CollectionViewCell.xib in Resources */,
 				2EE1DA351BFABE9000B26294 /* ico_love@2x.png in Resources */,
 			);
@@ -1381,11 +1525,13 @@
 				2E5BBDBC1C0FD6EF00DD6A4D /* LoginViewController.m in Sources */,
 				2EE4AB071C1EBB7300535135 /* AFNetworkReachabilityManager.m in Sources */,
 				2E7653B21C4F1C5200F9C299 /* PackageImageCell.m in Sources */,
+				2EECE4FE1C87E02E00C9A3A3 /* XMShareWeiboUtil.m in Sources */,
 				2EC8C6471BE366EF0045C2AF /* JokeModel.m in Sources */,
 				2EE1DA741BFAD23000B26294 /* PictureHeaderView.m in Sources */,
 				2EE4C0061C1947DA001BF306 /* SVIndefiniteAnimatedView.m in Sources */,
 				2ECC2F421BE9B8EB008B2103 /* PictureCell.m in Sources */,
 				2EE070C81C55FCA40026B72E /* PictureViewController.m in Sources */,
+				2EECE4D41C87E01F00C9A3A3 /* ZFShareViewController.m in Sources */,
 				2E5BBDD11C103E3900DD6A4D /* RegistViewController.m in Sources */,
 				2ECC2F391BE9A4F9008B2103 /* JokeCollectEntity.m in Sources */,
 				2ED20D581BE06A8300BBF681 /* SDWebImagePrefetcher.m in Sources */,
@@ -1411,6 +1557,7 @@
 				2ED20D521BE06A8300BBF681 /* SDImageCache.m in Sources */,
 				2ECED6BE1BF032BE00E4A0FC /* CollectionViewCell.m in Sources */,
 				2EC8C6521BE375A00045C2AF /* JokeEntity.m in Sources */,
+				2EECE4D31C87E01F00C9A3A3 /* XMNShareView.m in Sources */,
 				2EE4C0081C1947DA001BF306 /* SVProgressHUD.m in Sources */,
 				2E0C37BF1BE7687A00A2DFFD /* MJRefreshHeaderView.m in Sources */,
 				2ED20D2C1BE0628200BBF681 /* ExpressionViewCell.m in Sources */,
@@ -1418,11 +1565,17 @@
 				2E17E82B1BD5F82000DE2D14 /* ExpressionModel.m in Sources */,
 				2ED20D531BE06A8300BBF681 /* SDWebImageCompat.m in Sources */,
 				2E7653A61C4F1BCF00F9C299 /* PackageViewController.m in Sources */,
+				2EECE4FF1C87E02E00C9A3A3 /* XMShareView.m in Sources */,
 				2EC8C63B1BE30D1F0045C2AF /* PictureModel.m in Sources */,
 				2ED20D5A1BE06A8300BBF681 /* UIImage+GIF.m in Sources */,
 				2EDEE2A71BFC33FD0054EA5B /* jokeCollectCell.m in Sources */,
 				2EE249BB1C22583600DB3F64 /* ZFProgressView.m in Sources */,
+				2EECE4F11C87E02E00C9A3A3 /* VerticalUIButton.m in Sources */,
 				2ED20D571BE06A8300BBF681 /* SDWebImageManager.m in Sources */,
+				2EECE4FD1C87E02E00C9A3A3 /* XMShareWechatUtil.m in Sources */,
+				2EECE5001C87E02E00C9A3A3 /* ZFshareView.m in Sources */,
+				2EECE4D21C87E01F00C9A3A3 /* XMNShareScrollView.m in Sources */,
+				2EECE4CF1C87E01F00C9A3A3 /* AppCell.m in Sources */,
 				2EE4AB061C1EBB7300535135 /* AFHTTPSessionManager.m in Sources */,
 				2E7653AD1C4F1C2200F9C299 /* PackageCell.m in Sources */,
 				2E428ACB1C16786400482369 /* PasswordViewController.m in Sources */,
@@ -1442,8 +1595,11 @@
 				2E0C37BE1BE7687A00A2DFFD /* MJRefreshFooterView.m in Sources */,
 				2ED20D551BE06A8300BBF681 /* SDWebImageDownloader.m in Sources */,
 				2ED20D511BE06A8300BBF681 /* NSData+ImageContentType.m in Sources */,
+				2EECE4FC1C87E02E00C9A3A3 /* XMShareUtil.m in Sources */,
 				2E17E81B1BD5F54F00DE2D14 /* CollectViewController.m in Sources */,
 				2EC8C64F1BE36FA20045C2AF /* NSString+SelfSize.m in Sources */,
+				2EECE4D11C87E01F00C9A3A3 /* AppModel.m in Sources */,
+				2EECE4FB1C87E02E00C9A3A3 /* XMShareQQUtil.m in Sources */,
 				2ED20D591BE06A8300BBF681 /* UIButton+WebCache.m in Sources */,
 				2E7653A91C4F1BEB00F9C299 /* PackageDetailViewController.m in Sources */,
 				2EC9E2681BCC93C9006694FB /* AppDelegate.m in Sources */,

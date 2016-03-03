@@ -22,6 +22,9 @@
 #import "WeiboSDK.h"
 
 #import "SDWebImageManager.h"
+
+#import "CommonMarco.h"
+
 @interface AppDelegate ()
 
 @end
@@ -40,6 +43,8 @@
     [self.window makeKeyAndVisible];
     
     [self initWithShareSDK];
+    
+    [self init3rdParty];
     
     return YES;
 }
@@ -259,6 +264,24 @@
     [[SDImageCache sharedImageCache] clearMemory];
     
 }
+
+
+
+/**
+ *  初始化第三方组件
+ */
+- (void)init3rdParty
+{
+    [WXApi registerApp:APP_KEY_WEIXIN];
+    
+    [WeiboSDK enableDebugMode:YES];
+    
+    [WeiboSDK registerApp:APP_KEY_WEIBO];
+    
+}
+
+
+
 
 
 
