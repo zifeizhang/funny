@@ -24,6 +24,7 @@
 #import "SDWebImageManager.h"
 
 #import "CommonMarco.h"
+#import "JPFPSStatus.h"
 
 @interface AppDelegate ()
 
@@ -45,6 +46,10 @@
     [self initWithShareSDK];
     
     [self init3rdParty];
+    
+    [[JPFPSStatus sharedInstance]openWithHandler:^(NSInteger fpsValue) {
+        ZFLog(@" ----- %ld",fpsValue);
+    }];
     
     return YES;
 }

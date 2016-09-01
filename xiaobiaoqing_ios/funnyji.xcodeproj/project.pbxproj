@@ -242,6 +242,7 @@
 		2EECE4FE1C87E02E00C9A3A3 /* XMShareWeiboUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4EC1C87E02E00C9A3A3 /* XMShareWeiboUtil.m */; };
 		2EECE4FF1C87E02E00C9A3A3 /* XMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4EE1C87E02E00C9A3A3 /* XMShareView.m */; };
 		2EECE5001C87E02E00C9A3A3 /* ZFshareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE4F01C87E02E00C9A3A3 /* ZFshareView.m */; };
+		5107EDE81D2FB6B0006E7D91 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5107EDE71D2FB6B0006E7D91 /* JPFPSStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -590,6 +591,8 @@
 		2EECE4EE1C87E02E00C9A3A3 /* XMShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMShareView.m; sourceTree = "<group>"; };
 		2EECE4EF1C87E02E00C9A3A3 /* ZFshareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFshareView.h; sourceTree = "<group>"; };
 		2EECE4F01C87E02E00C9A3A3 /* ZFshareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFshareView.m; sourceTree = "<group>"; };
+		5107EDE61D2FB6B0006E7D91 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		5107EDE71D2FB6B0006E7D91 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -837,6 +840,7 @@
 		2EC9E2571BCC93C9006694FB = {
 			isa = PBXGroup;
 			children = (
+				5107EDE51D2FB6B0006E7D91 /* JPFPSStatus */,
 				2EECE4D51C87E02E00C9A3A3 /* XMShareView */,
 				2EECE4C21C87E01F00C9A3A3 /* XMNShareMenu */,
 				2ED19F3D1C28EC280027F616 /* StoreKit.framework */,
@@ -1328,6 +1332,15 @@
 			path = ShareUtil;
 			sourceTree = "<group>";
 		};
+		5107EDE51D2FB6B0006E7D91 /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				5107EDE61D2FB6B0006E7D91 /* JPFPSStatus.h */,
+				5107EDE71D2FB6B0006E7D91 /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1533,6 +1546,7 @@
 				2EE070C81C55FCA40026B72E /* PictureViewController.m in Sources */,
 				2EECE4D41C87E01F00C9A3A3 /* ZFShareViewController.m in Sources */,
 				2E5BBDD11C103E3900DD6A4D /* RegistViewController.m in Sources */,
+				5107EDE81D2FB6B0006E7D91 /* JPFPSStatus.m in Sources */,
 				2ECC2F391BE9A4F9008B2103 /* JokeCollectEntity.m in Sources */,
 				2ED20D581BE06A8300BBF681 /* SDWebImagePrefetcher.m in Sources */,
 				2EE4AB0C1C1EBB7300535135 /* AFURLSessionManager.m in Sources */,
